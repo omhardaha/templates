@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+body::-webkit-scrollbar {
+    width: 9px;
+    background: transparent;
+  }
+  .no-outline{
+    outline: none;
+  }
+  body::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background-color:#153a5b;
+  }
+  body::-webkit-scrollbar-thumb:hover{
+    border-radius:5px;
+    background-color:rgba(79, 222, 189, 0.53);
+  }
+  body {
+	/* background: var(--bodyBg); */
+	background-color: rgb(243 242 239);
+}

@@ -1,0 +1,55 @@
+/* fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
+
+.b-custom {
+	border: 0.5px solid;
+}
+
+/* detailTag */
+/* @keyframes open {
+	0% {
+		opacity: 0.5;
+        margin-top: -20px;
+	}
+	100% {
+        opacity: 1;
+        margin-top: 0px;
+	}
+}
+
+details[open] summary ~ * {
+	animation: open 2 ease-in-out;
+} */
+
+details > summary {
+	list-style: none;
+}
+details > summary::-webkit-details-marker {
+	display: none;
+}
+
+@keyframes details-show {
+	from {
+		opacity: 0;
+		transform: var(--details-translate, translateY(-0.5em));
+	}
+}
+
+details[open] > *:not(summary) {
+	animation: details-show 850ms ease-in-out;
+}
+
+.cp-list {
+	clip-path: url("asset/user_image_frame_1.png");
+}
+.half-black {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .mask1 {
+    -webkit-mask-image:url("asset/user_image_frame_1.png");
+    mask-image:url("asset/user_image_frame_1.png");
+    -webkit-mask-repeat:   round;
+     mask-repeat:  round;
+  }
