@@ -11,7 +11,7 @@ export default function SinglePage() {
 
     return (
         <>
-            <div className='grid lg:grid-cols-2 grid-cols-1 gap-6  mt-10 '>
+            <div className='grid lg:grid-cols-2 grid-cols-1 gap-6  mt-20 '>
                 <div className='bg-larq2 h-full'>
                     <div className='bg-larq2'>
 

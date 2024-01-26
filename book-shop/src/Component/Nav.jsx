@@ -6,7 +6,7 @@ export default function Nav() {
     const [menu, setMenu] = useState(true);
 
     return (
-        <div className='fixed w-full '>
+        <div className='fixed w-full top-0'>
 
             <nav className='cursor-pointer h-16 drop-shadow p-4 bg-white shadow font-semibold md:flex md:items-center md:justify-between text-larq w-full '>
 

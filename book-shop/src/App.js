@@ -7,9 +7,7 @@ import BooksCollection from "./Component/BooksCollection";
 import BooksCollection2 from "./Component/BooksCollection2";
 import Quotes from "./Component/Quotes";
 import SingleBook from "./Component/SingleBook";
-import SinglePage from "./Component/SinglePage";
-
-
+import SinglePage from "./Component/SinglePage"; 
 
 export default function App() {
 	return (
@@ -17,7 +15,7 @@ export default function App() {
 			<Nav />
             {/* <NavBar2/> */}
 			<div className="lg:mx-20 mx-10  ">
-				<div className="h-20">fh</div>
+				{/* <div className="h-20"> </div> */}
 				<SinglePage />
 				<Header />
 				<BooksCollection />
