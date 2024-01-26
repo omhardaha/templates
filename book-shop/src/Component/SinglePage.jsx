@@ -53,7 +53,7 @@ export default function SinglePage() {
                             </Animated>
                         </details> */}
                         <div className='drop-shadow-xl py-6'>
-                            <details className='detailAnimaion list-none text-larq font-500'>
+                            <details open className='detailAnimaion list-none text-larq font-500'>
                                 <summary className='font-medium cursor-pointer flex items-in  justify-between'>Product Description <BsChevronDown /></summary>
                                 <p className='text-slate-500 py-2 text-normal'>A good book description is a detailed, descriptive copy that is good for public display, used for your book marketing, book discovery, and for sales purposes. It helps potential buyers find and understand your book. It's your pitch. Your chance to get people interested.
                                     After the title and the cover, the most important marketing material for your book is the description. The book description goes on the back cover and right below the price (on Amazon). It's crucial that this short paragraph be right.
@@ -62,7 +62,7 @@ export default function SinglePage() {
                             </details>
                         </div>
                         <div className='drop-shadow-xl py-6'>
-                            <details className='detailAnimaion list-none text-larq font-500'>
+                            <details open className='detailAnimaion list-none text-larq font-500'>
                                 <summary className='font-medium cursor-pointer flex items-in  justify-between'>Shipping & Return <BsChevronDown /></summary>
                                 <p className='text-slate-500 py-2 text-normal'>Free shipping on orders over $80.
                                     We would be happy to accept returns of any unused LARQ product (excluding charging cables and personalized LARQ Bottles) in its original packaging within 30 days of the purchase date.
