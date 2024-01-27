@@ -4,7 +4,6 @@ import { BsFacebook, BsLinkedin, BsInstagram, BsTwitter } from 'react-icons/bs'
 export default function Footer() {
     return (
         <div className='bg-larq text-white sticky top-[100vh] w-full text-center md:text-left'>
-
             <div className=' p-10'>
                 <div className='grid  lg:grid-cols-4 md:grid-cols-2 grid-cols-1 '>
                     <div className=' p-2 m-4 '>

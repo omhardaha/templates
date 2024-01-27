@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
     return (
-        <div className="bg-white ">
+        <div className="bg-white mb-8">
             <div className="p-12 my-auto">
                 <div className="lg:mx-28  text-larq font-[Poppins]  text-center">
                     <h1 className="text-4xl md:text-6xl py-4 font-black">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SingleBook2({ imageLink }) {
+export default function MID_BOOK_1({ imageLink,name,price }) {
     return (
         <div className='bg-larq2 text-larq font-semibold flex flex-col justify-center items-center p-10' >
             <div >
@@ -8,8 +8,8 @@ export default function SingleBook2({ imageLink }) {
             </div>
 
             <div className='flex flex-col justify-center items-center py-6'>
-                <h1 className='text-xl py-4'>The Lord of the Rings</h1>
-                <span className='text-center m-auto'> Starting at $199 <s className='pl-1 font-thin'>  $400</s></span>
+                <h1 className='text-xl py-4'>{name}</h1>
+                <span className='text-center m-auto'> Starting at $199 <s className='pl-1 font-thin'>  {price}</s></span>
             </div>
 
             {/* <div className=' py-4'>

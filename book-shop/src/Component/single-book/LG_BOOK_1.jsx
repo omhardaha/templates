@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SingleBook({ imageLink }) {
+export default function LARGE_BOOK_1({ imageLink,name }) {
     return (
         <div className='bg-larq2 text-larq font-semibold flex flex-col justify-center items-center p-10' >
             <div className='flex flex-col justify-center items-center py-6'>

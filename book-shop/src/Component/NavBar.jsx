@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { BsGlobe } from 'react-icons/bs'
 import { AiOutlineShopping } from 'react-icons/ai'
 import { GrClose, GrMenu } from 'react-icons/gr'
-export default function Nav() {
+
+export default function NavBar() {
     const [menu, setMenu] = useState(true);
 
     return (

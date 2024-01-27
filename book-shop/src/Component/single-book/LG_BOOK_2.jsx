@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SingleBook3({ imageLink }) {
+export default function LARGE_BOOK_1({ imageLink }) {
     return (
         <div style={{
             backgroundImage: "url('https://media.harrypotterfanzone.com/goblet-of-fire-ebook-cover.jpg')",
