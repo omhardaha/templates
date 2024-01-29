@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Home from "./page/Home";
 import Cart from "./page/Cart";
+import SignIn from "./page/SignIn";
 // import Temp from "./page/Temp";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/cart" element={<Cart />} />
+                    <Route path="/sign-in" element={<SignIn />} />
                     {/* <Route path="/temp" element={<Temp />} /> */}
                 </Routes>
             </BrowserRouter> 

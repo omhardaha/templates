@@ -8,6 +8,9 @@ module.exports = {
 				larq2: "#f5f5f5",
 				larq3: "rgb(90, 94, 96)",
 			},
+            fontFamily:{
+                themefont: "value"
+            }
 		},
 	},
 	plugins: [],
