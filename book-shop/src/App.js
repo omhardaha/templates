@@ -14,6 +14,8 @@ import Cart from "./page/Cart";
 export default function App() {
     return (
         <>
+        <div className=" bg-blue-50">
+
             <NavBar />
             <div className="h-16"></div>
             <BrowserRouter>
@@ -24,6 +26,7 @@ export default function App() {
                 </Routes>
             </BrowserRouter> 
             <Footer />
+        </div>
         </>
     );
 }
