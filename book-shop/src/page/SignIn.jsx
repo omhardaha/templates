@@ -1,22 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const SignIn = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert('Form submitted with email:'+ email+ 'and password:'+ password);
+    };
+
     return (
-        <div className=' my-28'>
+        <div className='my-28'>
             <div className='text-center text-4xl font-bold text-larq mb-12'>Sign In</div>
-            <div className='md:flex justify-cemter md:w-3/5 mx-auto'>
+            <div onSubmit={handleSubmit} className='md:flex justify-cemter md:w-3/5 mx-auto'>
 
                 <div className='md:w-3/6 p-3'>
                     <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="email">Email Address</label>
-                        <input name='email' className='border-2 w-full p-4' type="text" />
+                        <input 
+                            name='email' 
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            className='border-2 w-full p-4' 
+                            type="text" 
+                        />
                     </div>
                     <div className='mb-8'>
                         <label className='block mb-2 text-slate-400' htmlFor="password">Password</label>
-                        <input name='password' className='border-2 w-full p-4' type="password" />
+                        <input 
+                            name='password' 
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            className='border-2 w-full p-4' 
+                            type="password" 
+                        />
                     </div>
                     <div className='flex justify-around mx-2'>
-                        <button className='font-bold bg-larq px-12 py-2 text-white'>
+                        <button onClick={handleSubmit} type="submit" className='font-bold bg-larq px-12 py-2 text-white'>
                             Sign in
                         </button>
                         <a className='text-slate-500 underline decoration-1' href="/">Forgot Your Password</a>
@@ -37,15 +57,15 @@ const SignIn = () => {
                         </div>
                     </div>
                     <div>
-                    <button className='font-bold bg-larq px-12 py-2 text-white'>
+                        <a href='/register' className='font-bold bg-larq px-12 py-2 text-white'>
                             Create An Account 
-                        </button>
+                        </a>
                     </div>
                 </div>
 
             </div>
         </div>
-    )
+    );
 }
 
-export default SignIn
+export default SignIn;
