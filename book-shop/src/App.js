@@ -7,10 +7,11 @@ import {
     Route,
     Routes,
 } from "react-router-dom";
-import Home from "./page/Home";
-import Cart from "./page/Cart";
-import SignIn from "./page/SignIn";
-import Register from "./page/Register";
+import Home from "./pages/Home";
+import Cart from "./pages/Cart";
+import SignIn from "./pages/SignIn";
+import Register from "./pages/Register";
+import SinglePage from "./component/SinglePage";
 // import Temp from "./page/Temp";
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
                     <Route path="/cart" element={<Cart />} />
                     <Route path="/sign-in" element={<SignIn />} />
                     <Route path="/register" element={<Register />} />
+                    <Route path="/product" element={<SinglePage />} />
                     {/* <Route path="/temp" element={<Temp />} /> */}
                 </Routes>
             </BrowserRouter> 

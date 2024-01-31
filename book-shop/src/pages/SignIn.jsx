@@ -6,7 +6,7 @@ const SignIn = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert('Form submitted with email:'+ email+ 'and password:'+ password);
+        alert('Form submitted with email:' + email + 'and password:' + password);
     };
 
     return (
@@ -17,22 +17,22 @@ const SignIn = () => {
                 <div className='md:w-3/6 p-3'>
                     <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="email">Email Address</label>
-                        <input 
-                            name='email' 
+                        <input
+                            name='email'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className='border-2 w-full p-4' 
-                            type="text" 
+                            className='border-2 w-full p-4'
+                            type="text"
                         />
                     </div>
                     <div className='mb-8'>
                         <label className='block mb-2 text-slate-400' htmlFor="password">Password</label>
-                        <input 
-                            name='password' 
+                        <input
+                            name='password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className='border-2 w-full p-4' 
-                            type="password" 
+                            className='border-2 w-full p-4'
+                            type="password"
                         />
                     </div>
                     <div className='flex justify-around mx-2'>
@@ -58,7 +58,7 @@ const SignIn = () => {
                     </div>
                     <div>
                         <a href='/register' className='font-bold bg-larq px-12 py-2 text-white'>
-                            Create An Account 
+                            Create An Account
                         </a>
                     </div>
                 </div>

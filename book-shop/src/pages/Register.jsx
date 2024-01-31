@@ -41,31 +41,31 @@ const Register = () => {
                         <input value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} id='confirmPassword' name='confirmPassword' className='border-2 w-full p-4' type="password" />
                     </div>
                     <div className='mb-10'>
-    <label className='block mb-2 text-slate-400' htmlFor="first_name">First Name</label>
-    <input value={first_name} onChange={(e) => setFirstName(e.target.value)} id='first_name' name='first_name' className='border-2 w-full p-4' type="text" />
-</div>
+                        <label className='block mb-2 text-slate-400' htmlFor="first_name">First Name</label>
+                        <input value={first_name} onChange={(e) => setFirstName(e.target.value)} id='first_name' name='first_name' className='border-2 w-full p-4' type="text" />
+                    </div>
 
 
-                    <div className='mb-8'>
+                    <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="address1">Address Line 1</label>
                         <input value={address_1} onChange={(e) => setAddress1(e.target.value)} id='address1' name='address1' className='border-2 w-full p-4' type="text" />
                     </div>
-                    <div className='mb-8'>
+                    <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="state">State</label>
                         <input value={state} onChange={(e) => setState(e.target.value)} id='state' name='state' className='border-2 w-full p-4' type="text" />
                     </div>
-                    <div className='mb-8'>
+                    <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="phone">Phone Number</label>
                         <input value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} id='phone' name='phone' className='border-2 w-full p-4' type="text" />
                     </div>
                 </div>
                 <div className='md:w-3/6 p-3'>
 
-                    <div className='mb-8'>
+                    <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="password">Password</label>
                         <input value={password} onChange={(e) => setPassword(e.target.value)} id='password' name='password' className='border-2 w-full p-4' type="password" />
                     </div>
-                    <div className='mb-8'>
+                    <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="country">Country</label>
                         <select value={country} onChange={(e) => setCountry(e.target.value)} id="country" name="country" className="form-select border-2 w-full p-4">
                             <option className="border-2 w-full p-4" >  select country</option>
@@ -324,15 +324,15 @@ const Register = () => {
                         </select>
                     </div>
                     <div className='mb-10'>
-    <label className='block mb-2 text-slate-400' htmlFor="last_name">Last Name</label>
-    <input value={last_name} onChange={(e) => setLastName(e.target.value)} id='last_name' name='last_name' className='border-2 w-full p-4' type="text" />
-</div>
+                        <label className='block mb-2 text-slate-400' htmlFor="last_name">Last Name</label>
+                        <input value={last_name} onChange={(e) => setLastName(e.target.value)} id='last_name' name='last_name' className='border-2 w-full p-4' type="text" />
+                    </div>
 
-                    <div className='mb-8'>
+                    <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="address2">Address Line 2</label>
                         <input value={address_2} onChange={(e) => setAddress2(e.target.value)} id='address2' name='address2' className='border-2 w-full p-4' type="text" />
                     </div>
-                    <div className='mb-8'>
+                    <div className='mb-10'>
                         <label className='block mb-2 text-slate-400' htmlFor="zip">Zip</label>
                         <input value={zip} onChange={(e) => setZip(e.target.value)} id='zip' name='zip' className='border-2 w-full p-4' type="text" />
                     </div>

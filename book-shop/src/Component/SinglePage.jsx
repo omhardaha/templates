@@ -10,8 +10,8 @@ export default function SinglePage() {
     const [indexOfReview, setIndexOfReview] = useState(0);
 
     return (
-        <>
-            <div className='grid lg:grid-cols-2 grid-cols-1 gap-6  mt-20 '>
+        <div className=' md:mx-10 '>
+            <div className='grid lg:grid-cols-2 grid-cols-1 gap-6  mt-20'>
                 <div className='bg-larq2 h-full'>
                     <div className='bg-larq2'>
 
@@ -156,6 +156,6 @@ export default function SinglePage() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

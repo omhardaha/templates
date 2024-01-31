@@ -6,7 +6,7 @@ export default function LARGE_BOOK_1({ imageLink }) {
             backgroundImage: "url('https://media.harrypotterfanzone.com/goblet-of-fire-ebook-cover.jpg')",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            backgroundSize: "cover"
+            backgroundSize: "contain"
         }}
             className=" text-larq font-semibold  overflow-hidden flex flex-col justify-end " >
 
@@ -14,7 +14,7 @@ export default function LARGE_BOOK_1({ imageLink }) {
                 <h1 className='text-3xl py-4'>The Lord of the Rings</h1>
                 <span className='text-center m-auto'> Starting at $199</span>
             </div> */}
-            <div style={{ background: "linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent " }} className="w-full p-10">
+            <div style={{ background: "linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent " }} className="w-full p-10">
 
                 <div>
                     <h1 className='text-white text-4xl font-bold drop-shadow-xl'>The Seven Husbands of Evelyn Hugo</h1>
