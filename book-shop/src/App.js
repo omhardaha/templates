@@ -7,6 +7,7 @@ import Cart from "./pages/Cart";
 import SignIn from "./pages/SignIn";
 import Register from "./pages/Register";
 import SinglePage from "./component/SinglePage"; 
+import Products from "./pages/Products";
 
 export default function App() {
     return (
@@ -21,6 +22,7 @@ export default function App() {
                         <Route path="/sign-in" element={<SignIn />} />
                         <Route path="/register" element={<Register />} />
                         <Route path="/product" element={<SinglePage />} />
+                        <Route path="/products" element={<Products />} />
                     </Routes>
                 </BrowserRouter>
                 <Footer />
