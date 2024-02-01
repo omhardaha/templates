@@ -62,7 +62,6 @@ const SignIn = () => {
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     );

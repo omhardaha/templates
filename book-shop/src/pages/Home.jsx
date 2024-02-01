@@ -1,10 +1,9 @@
-import React from 'react'
-
+import React from 'react' 
 import Header from "../component/Header";
-import TopPicks from "../component/TopPicks";
-import BooksCollection2 from "../component/BOOK_GROUP_MD";
+import TopPicks from "../component/TopPicks"; 
 import Quotes from "../component/Quotes";
 import SinglePage from "../component/SinglePage";
+import BookContainerLg from '../component/container/BookContainerLg';
 
 const Home = () => {
     return (
@@ -12,8 +11,8 @@ const Home = () => {
             {/* <SinglePage /> */}
             <Header />
             <TopPicks />
-            <BooksCollection2 heading={"For Gift Someone"} />
-            <BooksCollection2 heading={"Non-Fiction"} />
+            <BookContainerLg heading={"For Gift Someone"} /> 
+            <BookContainerLg heading={"Non-Fiction"} />
             <Quotes />
         </div></div>
     )
