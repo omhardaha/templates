@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LargeBook2({ imageLink }) {
     return (
-        <div 
+        <a href='/product' 
             className="bg-lg-book-2 text-larq font-semibold  overflow-hidden flex flex-col justify-end " >
 
             {/* <div className='flex flex-col justify-center items-center py-6'>
@@ -19,6 +19,6 @@ export default function LargeBook2({ imageLink }) {
                     <button className='text-white b-1 border-solid border-white p-1 text-sm border-2 '>Shop Now</button>
                 </div>
             </div>
-        </div >
+        </a >
     )
 }

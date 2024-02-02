@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsFacebook, BsLinkedin, BsInstagram, BsTwitter } from 'react-icons/bs'
+import ListItem from './ListItem'
 
 export default function Footer() {
     return (
@@ -9,9 +10,10 @@ export default function Footer() {
                     <div className=' p-2 m-4 '>
                         <h1 className='text-lg font-bold '>Help</h1>
                         <ul>
-                            <li className='py-2'>
+                            <ListItem link="https://github.com/omhardaha" text="Frequently Asked Questions"/>
+                            {/* <li className='py-2'>
                                 <a href="https://github.com/omhardaha">Frequently Asked Questions</a>
-                            </li>
+                            </li> */}
                             <li className='py-2'>
                                 <a href="https://github.com/omhardaha">Review</a>
                             </li>

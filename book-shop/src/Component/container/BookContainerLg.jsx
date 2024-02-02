@@ -13,7 +13,7 @@ export default function BookContainerLg({ heading,search }) {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-                
+
                 const data = await response.json();
                 if (data.items) {
                     // const books = data.items.map(item => ({
@@ -30,7 +30,7 @@ export default function BookContainerLg({ heading,search }) {
         };
 
         fetchData();
-    }, []); // Empty dependency array to ensure the effect runs only once
+    }, [heading]); // Empty dependency array to ensure the effect runs only once
 
     return (
         <div>

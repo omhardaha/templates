@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MID_BOOK_1({ imageLink,name,price }) {
     return (
-        <div className='bg-larq2 text-larq font-semibold flex flex-col justify-center items-center p-10' >
+        <a href='/product' className='bg-larq2 text-larq font-semibold flex flex-col justify-center items-center p-10' >
             <div >
                 <img className='h-40 inline hover:rotate-6 duration-200 ease-in' src={imageLink} alt="" />
             </div>
@@ -15,6 +15,6 @@ export default function MID_BOOK_1({ imageLink,name,price }) {
             {/* <div className=' py-4'>
                 <span className='font-light text-gray-400'>Most people have seen the epic movie, but have you read the book?</span>
             </div> */}
-        </div>
+        </a>
     )
 }

@@ -5,7 +5,7 @@ import { RiStarSFill, RiStarSLine, RiStarHalfSLine } from 'react-icons/ri'
 import { BsChevronDown, BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import { ImQuotesLeft } from 'react-icons/im'
 import { useState } from 'react';
-export default function SinglePage() {
+export default function Product() {
     let reviewData = [{ title: "The Psychology of Money is bursting with interesting ideas and practical takeaways. Quite simply, it is essential reading for anyone interested in being better with money. Everyone should own a copy.", author: "James Clear" }, { title: "Morgan Housel is one of the brightest new lights among financial writers. He is accessible to everyone wanting to learn more about the psychology of money. I highly recommend this book.", author: "Morgan P. O’Shaughnessy" }, { title: "Few people write about finance with the graceful clarity of Morgan Housel. The Psychology of Money is an essential read for anyone who wants to make wiser decisions or live a richer life.", author: " Daniel H. Pink" },];
     const [indexOfReview, setIndexOfReview] = useState(0);
 
