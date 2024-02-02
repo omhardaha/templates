@@ -1,6 +1,6 @@
 import React from 'react'
-import LG_BOOK_1 from "./single-book/LG_BOOK_1"
-import LG_BOOK_2 from './single-book/LG_BOOK_2'
+import LG_BOOK_1 from "./single-book/LargeBook1"
+import LG_BOOK_2 from './single-book/LargeBook2'
 
 export default function TopPicks() {
     return (
