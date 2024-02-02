@@ -2,8 +2,8 @@ import React from 'react'
 import Header from "../component/Header";
 import TopPicks from "../component/TopPicks"; 
 import Quotes from "../component/Quotes";
-import SinglePage from "../component/SinglePage";
 import BookContainerLg from '../component/container/BookContainerLg';
+import SinglePage from "../component/SinglePage";
 
 const Home = () => {
     return (
