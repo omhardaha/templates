@@ -8,8 +8,8 @@ export default function Footer() {
   return (
     <div className="bg-larq text-white sticky top-[100vh] w-full text-center md:text-left">
       <div className=" p-10">
-        <div className="grid  lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
-          <div className=" p-2 m-4 ">
+        <div className="grid  lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+          <div className=" p-2 m-4">
             <h1 className="text-lg font-bold ">Help</h1>
             <ul>
               <ListItem link="https://github.com/omhardaha" text="Frequently Asked Questions" />

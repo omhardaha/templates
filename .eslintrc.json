@@ -48,7 +48,7 @@
 
 		// Sets a maximum line length for code (Airbnb recommends 100 characters).
     "linebreak-style": "off",
-    
+
     "react/prop-types": "off"
     }
 }

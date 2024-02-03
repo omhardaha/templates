@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <h1 class="text-3xl font-bold underline">Hello world!</h1> -->
+
+    <!-- Navbar -->
+    <nav class="cursor-pointer">
+      <div
+        id="navSidebar"
+        class="transition delay-150 transition-all delay-150 ease-in duration-300 text-center text-2xl h-full hidden bg-black w-full bg-black/[.02] text-white fixed top-0"
+      >
+        <div class="bg-black w-2/6 h-full">
+          <div class="text-right mr-10">
+            <button
+              onclick="closeNav()"
+              class="text-right mt-4 hover:text-gray-600"
+            >
+              X
+            </button>
+          </div>
+          <ul class="flex-col">
+            <li class="my-6 hover:text-gray-600">Home</li>
+            <li class="my-6 hover:text-gray-600">Services</li>
+            <li class="my-6 hover:text-gray-600">Contact</li>
+            <li class="my-6 hover:text-gray-600">About</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h-20 px-10 flex justify-between align-center items-center">
+        <h1 class="text-gray-600 font-bold text-2xl">Logo</h1>
+        <button
+          onclick="openNav()"
+          id="openNav"
+          class="hover:text-yellow-200 rotate-90 font-bold"
+        >
+          |||
+        </button>
+      </div>
+    </nav>
+
+    <!-- Heading Page -->
+    <div class="flex justify-evenly justify-items-start h-screen">
+      <div
+        class="bg-green-100 w-full bg-contain bg-no-repeat bg-cover bg-[url('https://images.unsplash.com/photo-1676311396794-f14881e9daaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+      >
+        <img src="" alt="" />
+      </div>
+      <div class=" w-full p-20">
+        <div class="">
+          <h1 class="text-5xl font-bold mb-4">AC Repair Services</h1>
+          <p class="text-lg leading-7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            corrupti tempora nisi quo sint reprehenderit facere modi, reiciendis
+            officiis facilis animi laborum praesentium!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
