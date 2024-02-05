@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./index.js"></script>
-    <link rel="stylesheet" href="styles.css" />
   </head>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="index.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="./index.js"></script>
+
   <body>
     <!-- <h1 class="text-3xl font-bold underline">Hello world!</h1> -->
 
@@ -88,7 +95,7 @@
       </button>
     </div>
 
-    <!-- Missons -->
+    <!-- Missons Section-->
     <div class="px-28 py-10">
       <div class="h-90 mb-10 bg-stone-100 flex justify-items-start">
         <img
@@ -109,22 +116,87 @@
         </div>
       </div>
       <div
-        class="h-72 mb-10 bg-stone-300 flex justify-between justify-items-start"
+        class="header-mission h-90 mb-10 bg-stone-100 flex justify-items-start"
       >
         <img
           src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          class="w-3/6"
+          class="w-2/5"
         />
-        <div class="w-3/6">Right Text</div>
+        <div class="p-8">
+          <h1 class="text-2xl font-bold font-['Poppins'] leading-14">
+            Missons
+          </h1>
+          <p class="my-8 text-lg text-gray-500 leading-7">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos inventore at accusantium? Necessitatibus ut dolor eos
+            quibusdam magnam molestiae nostrum totam? Ipsum dolor esse vero
+            suscipit exercitationem blanditiis aliquid consectetur.
+          </p>
+        </div>
       </div>
-      <div class="h-72 bg-stone-300 flex justify-between justify-items-start">
+      <div class="h-90 mb-10 bg-stone-100 flex justify-items-start">
         <img
           src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          class="w-2/6 image-contain"
+          class="w-2/5"
         />
-        <div class="w-3/6">Right Text</div>
+        <div class="p-8">
+          <h1 class="text-2xl font-bold font-['Poppins'] leading-14">
+            Missons
+          </h1>
+          <p class="my-8 text-lg text-gray-500 leading-7">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos inventore at accusantium? Necessitatibus ut dolor eos
+            quibusdam magnam molestiae nostrum totam? Ipsum dolor esse vero
+            suscipit exercitationem blanditiis aliquid consectetur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Choose Us Section-->
+    <div
+      class="grid grid-cols-2 gap-4 bg-yellow-400 h-screen items-center px-20"
+    >
+      <div class="">
+        <div class="text-center bg-white px-8 py-8">
+          <h1 class="text-5xl font-bold">History</h1>
+          <p class="leading-9 my-8 text-lg text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+            amet odit laudantium ratione deleniti incidunt sunt, dolores, ex
+            nobis provident voluptatem quod cum consequatur sint iure, autem
+            reprehenderit! Ullam veniam, itaque unde neque recusandae corporis
+            excepturi voluptatem optio distinctio id.
+          </p>
+          <button
+            class="cursor-pointer hover:bg-black hover:text-white px-10 py-4 bg-yellow-400 my-4"
+          >
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+      <div class="text-left p-3">
+        <h1 class="text-5xl text-3xl font-bold">Why Choose Us?</h1>
+        <b class="block text-lg my-6 text-dark"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique
+          amet, eum quod officia in unde repellat quaerat.</b
+        >
+        <p class="my-4 text-gray-600">
+          ✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="my-4 text-gray-600">
+          ✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="my-4 text-gray-600">
+          ✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="my-4 text-gray-600">
+          ✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="my-4 text-gray-600">
+          ✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
       </div>
     </div>
   </body>
