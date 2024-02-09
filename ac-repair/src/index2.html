@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<!-- <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" /> -->
+	<link rel="stylesheet" href="index.css" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+	<!-- <script src="./index.js"></script> -->
+
+	<body>
+
+		<!-- Navbar -->
+		<nav class="cursor-pointer">
+			<div
+				id="navSidebar"
+				class="transition delay-150 transition-all delay-150 ease-in duration-300 text-center text-2xl h-full hidden bg-black w-full bg-black/[.02] text-white fixed top-0"
+			>
+				<div class="bg-black w-2/6 h-full">
+					<div class="text-right mr-10">
+						<button
+							onclick="closeNav()"
+							class="text-right mt-4 hover:text-gray-600"
+						>
+							X
+						</button>
+					</div>
+					<ul class="flex-col">
+						<li class="my-6 hover:text-gray-600">Home</li>
+						<li class="my-6 hover:text-gray-600">Services</li>
+						<li class="my-6 hover:text-gray-600">Contact</li>
+						<li class="my-6 hover:text-gray-600">About</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="h-20 px-10 flex justify-between align-center items-center">
+				<h1 class="text-gray-600 font-bold text-2xl">Logo</h1>
+				<button
+					onclick="openNav()"
+					id="openNav"
+					class="hover:text-yellow-200 rotate-90 font-bold"
+				>
+					|||
+				</button>
+			</div>
+		</nav>
+
+		<!-- Heading Page -->
+		<div
+			class="flex flex-col-reverse md:flex-row justify-evenly justify-items-start h-full"
+		>
+			<div class="bg-green-100 w-full">
+				<img
+					class="object-cover h-full"
+					src="https://images.unsplash.com/photo-1676311396794-f14881e9daaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt=""
+				/>
+			</div>
+			<div class="w-full p-4 md:p-10 md:p-20">
+				<div class="">
+					<h1 class="text-5xl font-bold mb-4">AC Repair Services</h1>
+					<p class="text-lg tracking-wider leading-7">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+						molestiae unde explicabo enim corrupti beatae tempore quod rem omnis
+						velit dolor quibusdam fugiat minus magnam ducimus aliquid.
+					</p>
+					<button
+						class="mt-8 border-2 p-5 border-black hover:text-white hover:bg-black"
+					>
+						CONTACT US
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Heading Page 2 -->
+		<div
+			class="bg-gray-900 text-center text-white mx-auto md:px-56 px-4 py-10 md:py-20 h-3/6"
+		>
+			<h1
+				class="md:text-5xl text-2xl font-bold mx-10 font-['Poppins'] leading-14"
+			>
+				The Safe, Guaranteed Solution to Your Home Repair
+			</h1>
+			<p class="my-8 text-lg text-gray-500 leading-7">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+				inventore at accusantium? Necessitatibus ut dolor eos quibusdam magnam
+				molestiae nostrum totam? Ipsum dolor esse vero suscipit exercitationem
+				blanditiis aliquid consectetur.
+			</p>
+			<button
+				class="mt-2 md:mt-8 border-2 px-5 md:px-7 py-3 md:py-4 bg-yellow-400 border-black text-black hover:bg-white"
+			>
+				CONTACT US
+			</button>
+		</div>
+
+		<!-- Missons Section-->
+		<div class="lg:px-28 lg:py-10 md:px-10 md:py-5 px-7 py-3">
+			<div
+				class="h-90 mb-10 bg-stone-100 flex md:flex-row flex-col justify-items-start"
+			>
+				<img
+					src="https://images.unsplash.com/photo-1603114595741-e60bf9486e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt=""
+					class="md:w-2/5 object-cover"
+				/>
+				<div class="p-8">
+					<h1 class="text-2xl font-bold font-['Poppins'] leading-14">
+						Missons
+					</h1>
+					<p class="my-3 md:my-8 text-lg text-gray-500 leading-7">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Dignissimos inventore at accusantium? Necessitatibus ut dolor eos
+						quibusdam magnam molestiae nostrum totam? Ipsum dolor esse vero
+						suscipit exercitationem blanditiis aliquid consectetur.
+					</p>
+				</div>
+			</div>
+			<div
+				class="h-90 mb-10 bg-stone-100 flex md:flex-row flex-col justify-items-start"
+			>
+				<img
+					src="https://images.unsplash.com/photo-1605152276897-4f618f831968?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt=""
+					class="md:w-2/5 object-cover"
+				/>
+				<div class="p-8">
+					<h1 class="text-2xl font-bold font-['Poppins'] leading-14">
+						Services
+					</h1>
+					<p class="my-3 md:my-8 text-lg text-gray-500 leading-7">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Dignissimos inventore at accusantium? Necessitatibus ut dolor eos
+						quibusdam magnam molestiae nostrum totam? Ipsum dolor esse vero
+						suscipit exercitationem blanditiis aliquid consectetur.
+					</p>
+				</div>
+			</div>
+			<div
+				class="h-90 mb-10 bg-stone-100 flex md:flex-row flex-col justify-items-start"
+			>
+				<img
+					src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt=""
+					class="md:w-2/5 object-cover"
+				/>
+				<div class="p-8">
+					<h1 class="text-2xl font-bold font-['Poppins'] leading-14">
+						Missons
+					</h1>
+					<p class="my-3 md:my-8 text-lg text-gray-500 leading-7">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Dignissimos inventore at accusantium? Necessitatibus ut dolor eos
+						quibusdam magnam molestiae nostrum totam? Ipsum dolor esse vero
+						suscipit exercitationem blanditiis aliquid consectetur.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Why Choose Us Section-->
+		<div
+			class="grid md:grid-cols-2 gap-4 bg-yellow-400 py-16 items-center lg:px-20"
+		>
+			<div class="text-center bg-white p-8 md:row-start-1 row-start-2">
+				<h1 class="text-5xl font-bold">History</h1>
+				<p class="leading-9 my-8 text-lg text-gray-500">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+					amet odit laudantium ratione deleniti incidunt sunt, dolores, ex nobis
+					provident voluptatem quod cum consequatur sint iure, autem
+					reprehenderit! Ullam veniam, itaque unde neque recusandae corporis
+					excepturi voluptatem optio distinctio id.
+				</p>
+				<button
+					class="cursor-pointer hover:bg-black hover:text-white px-10 py-4 bg-yellow-400 my-4"
+				>
+					LEARN MORE
+				</button>
+			</div>
+			<div class="text-center md:p-0 p-8 md:text-left">
+				<h1 class="text-5xl text-3xl font-bold md:text-left text-center">
+					Why Choose Us?
+				</h1>
+				<b class="block text-lg my-6 text-dark"
+					>Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique
+					amet, eum quod officia in unde repellat quaerat.</b
+				>
+				<p class="my-4 text-gray-600">
+					✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+				<p class="my-4 text-gray-600">
+					✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+				<p class="my-4 text-gray-600">
+					✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+				<p class="my-4 text-gray-600">
+					✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+				<p class="my-4 text-gray-600">
+					✔ Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</div>
+		</div>
+
+		<!-- Repair And Acces Services Section -->
+		<div class="grid grid-cols-2 gap-4 mx-14 p-4">
+			<div>
+				<img
+					class="h-3/6 object-cover w-full"
+					src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt="men
+        "
+				/>
+				<div class="p-4">
+					<h1 class="text-3xl font-bold my-10">Homeowner Self-Help Services</h1>
+					<p class="leading-9 my-8 text-lg text-gray-500">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+						amet odit laudantium ratione deleniti incidunt sunt, dolores, ex
+						nobis provident voluptatem quod cum consequatur sint iure, autem
+						reprehenderit! Ullam veniam, itaque unde neque recusandae corporis
+						excepturi voluptatem optio distinctio id.
+					</p>
+					<button
+						class="cursor-pointer hover:bg-black hover:text-white px-10 py-4 bg-yellow-400 my-4"
+					>
+						LEARN MORE
+					</button>
+				</div>
+			</div>
+			<div>
+				<div class="p-4 bg-black text-white mb-4">
+					<h1 class="text-3xl font-bold my-10">Service at your Dooestep</h1>
+					<p class="leading-9 my-8 text-lg text-gray-500">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+						amet odit laudantium ratione deleniti incidunt sunt, dolores, ex
+						nobis provident voluptatem quod cum consequatur sint iure, autem
+						reprehenderit! Ullam veniam, itaque unde neque recusandae corporis
+						excepturi voluptatem optio distinctio id.
+					</p>
+					<button
+						class="cursor-pointer hover:bg-white hover:text-black px-10 py-4 border-2 my-4"
+					>
+						LEARN MORE
+					</button>
+				</div>
+				<img
+					class="h-3/6 object-cover w-full"
+					src="https://images.unsplash.com/photo-1530541263627-4314dd7a44c2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					alt="men
+        "
+				/>
+			</div>
+		</div>
+
+		<!-- Community Section  -->
+		<div class="bg-black p-10">
+			<div class="text-center mx-14 grid grid-cols-3 gap-8">
+				<div>
+					<img
+						class="h-60 w-full object-cover"
+						src="https://images.unsplash.com/photo-1558919047-80f932b017cf?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt=""
+					/>
+					<div class="p-4 bg-yellow-400 mx-10 font-bold">
+						Meet the staff and board of Home Repair Services
+					</div>
+					<p class="text-center text-white my-6 leading-7">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+						tenetur maiores facere eligendi quae molestias ut.
+					</p>
+					<a
+						class="text-yellow-400 font-bold hover:text-yellow-600 underline decoration-white underline-offset-4 hover:decoration-black"
+						href="/"
+						>LEARN MORE</a
+					>
+				</div>
+				<div>
+					<img
+						class="h-60 w-full object-cover"
+						src="https://images.unsplash.com/photo-1529111316-da2e2a1e625d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt=""
+					/>
+					<div class="p-4 bg-yellow-400 mx-10 font-bold">
+						Meet the staff and board of Home Repair Services
+					</div>
+					<p class="text-center text-white my-6 leading-7">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+						tenetur maiores facere eligendi quae molestias ut.
+					</p>
+					<a
+						class="text-yellow-400 font-bold hover:text-yellow-600 underline decoration-white underline-offset-4 hover:decoration-black"
+						href="/"
+						>LEARN MORE</a
+					>
+				</div>
+				<div>
+					<img
+						class="h-60 w-full object-cover"
+						src="https://images.unsplash.com/photo-1598200532468-42f2e09e0a78?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt=""
+					/>
+					<div class="p-4 bg-yellow-400 mx-10 font-bold">
+						Meet the staff and board of Home Repair Services
+					</div>
+					<p class="text-center text-white my-6 leading-7">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+						tenetur maiores facere eligendi quae molestias ut.
+					</p>
+					<a
+						class="text-yellow-400 font-bold hover:text-yellow-600 underline decoration-white underline-offset-4 hover:decoration-black"
+						href="/"
+						>LEARN MORE</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- Our Services -->
+		<div class="mx-14 my-8">
+			<h1 class="font-bold text-center my-10 text-4xl">Our Services</h1>
+			<div class="grid grid-cols-4 gap-4">
+				<div class="bg-green-100 h-64">
+					<img
+						class="h-full"
+						src="https://images.unsplash.com/photo-1565534355217-85fcfb04ce71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt=""
+					/>
+				</div>
+				<div class="bg-black text-white p-4 h-64">
+					<h2 class="my-4 text-xl">Car AC Repairs</h2>
+					<p class="leading-7">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+						Incidunt,illo. Incidunt,illo. Incidunt,illo.
+					</p>
+				</div>
+				<div class="bg-green-100 h-64">
+					<img
+						class="h-full w-full object-cover"
+						src="https://images.unsplash.com/photo-1595783873608-40967d9ed189?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt=""
+					/>
+				</div>
+				<div class="bg-stone-300 p-4 h-64">
+					<h2 class="my-4 text-xl">Even Situation</h2>
+					<p class="leading-7">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+						Incidunt,illo. Incidunt,illo. Incidunt,illo.
+					</p>
+				</div>
+				<div class="bg-stone-300 p-4 h-64">
+					<h2 class="my-4 text-xl">Home Repairs</h2>
+					<p class="leading-7">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+						Incidunt,illo. Incidunt,illo. Incidunt,illo.
+					</p>
+				</div>
+				<div class="bg-green-100 h-64">
+					<img
+						class="h-full"
+						src="https://images.unsplash.com/photo-1595783873674-14061993f357?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt=""
+					/>
+				</div>
+				<div class="bg-yellow-400 p-4 h-64">
+					<h2 class="my-4 text-xl">On Your Path</h2>
+					<p class="leading-7">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+						Incidunt,illo. Incidunt,illo. Incidunt,illo.
+					</p>
+				</div>
+				<div class="bg-green-100 h-64">
+					<img
+						class="h-full"
+						src="https://images.unsplash.com/photo-1638790585580-d6aa51d5a1d4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						alt=""
+					/>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Section  -->
+		<footer class="bg-gray-700 text-white p-20">
+			<div class="grid grid-cols-3 gap-4">
+				<div class="text-center p-8">
+					<h1 class="font-bold text-3xl">Email US</h1>
+					<p class="leading-9 my-8">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+						assumenda, dignissimos ipsam, minus sequi.
+					</p>
+					<input
+						placeholder="Enter Valid Email"
+						class="text-center w-full block p-3 mb-2"
+						id="Email"
+						type="email"
+					/>
+					<button class="text-black bg-yellow-400 px-10 py-3 w-full font-bold">
+						SUBMIT
+					</button>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
