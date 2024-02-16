@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+$dark-mod: on;
+$title-bg-color: #ffffff;
+$title-txt-color: #000000;
+$message-border-radius: 8px;
+$message-bg-color: hsl(202.86deg 25.3% 16.27%);
+$user-message-bg-color: hsl(168.39deg 100% 18.24%);
+$icon-height: 30px;
+
+@if $dark-mod == on {
+	$title-bg-color: #1f2c34;
+	$title-txt-color: #fff;
+}
+
+* {
+	font-family: "Fredoka";
+}
+.chat-container {
+	display: flex;
+	flex-direction: column;
+	max-height: 100vh;
+	min-height: 100vh;
+	// background-color: hsl(203, 22%, 39%);
+	background-image: url("./assets/bg.svg");
+
+	.title-box {
+		$title-container-height: 70px; //
+		background-color: $title-bg-color;
+		display: flex;
+		gap: 4;
+		flex-direction: row;
+		padding: 3px;
+		justify-content: space-between;
+		height: $title-container-height;
+		color: $title-txt-color;
+
+		button {
+			padding: 4px;
+			margin: 4px;
+			border-radius: 100%;
+			height: $icon-height;
+			width: $icon-height;
+			&:hover {
+				background: #4a4747;
+			}
+			img {
+				color: #fff;
+				// height: $icon-height;
+				// width: $icon-height;
+				@if $dark-mod == on {
+					filter: invert(100%);
+				}
+			}
+		}
+		.left-box {
+			display: flex;
+			.profile-pic {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.back-button {
+					display: flex;
+					justify-content: center;
+					gap: 2px;
+					align-items: center;
+					width: auto;
+					img {
+						width: 30px;
+					}
+					.profile-img {
+						width: calc($title-container-height * 0.6);
+						height: calc($title-container-height * 0.6);
+						border-radius: 100%;
+						filter: invert(0);
+					}
+				}
+			}
+			.chat-name {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 1vw;
+				span {
+					font-weight: 200;
+					font-size: small;
+				}
+			}
+		}
+		.right-buttons {
+			align-items: center;
+			display: flex;
+		}
+	}
+
+	.messages-box {
+		overflow-y: scroll;
+		height: 100%;
+		scrollbar-width: thin;
+		.user-chats {
+			.user-profile-pic {
+				img {
+					// padding: 4px;
+					margin: 9px;
+					border-radius: 100%;
+					width: calc($icon-height * 1.6);
+					height: calc($icon-height * 1.6);
+					border-radius: 100%;
+					filter: invert(0);
+				}
+			}
+			display: flex;
+			.user-chat {
+				display: flex;
+				flex-direction: column;
+				padding-right: 7vw;
+				padding-top: 1vw;
+				font-weight: 100;
+				.user-name:first-of-type {
+					color: orange;
+					font-weight: 300;
+					letter-spacing: 1.1;
+				}
+				div {
+					border-radius: $message-border-radius;
+					background-color: $message-bg-color;
+					margin-bottom: 3px;
+					color: #fff;
+					padding: 10px;
+					span {
+						display: block;
+					}
+					.message-date {
+						color: #ffffff6f;
+						text-align: right;
+						font-size: small;
+						line-height: 0.7;
+					}
+				}
+				div:first-of-type {
+					border-top-left-radius: 0;
+				}
+			}
+		}
+		.my-chat {
+			display: flex;
+			flex-direction: column;
+			padding-right: 1vw;
+			padding-top: 1vw;
+			padding-left: 7vw;
+			font-weight: 100;
+			div {
+				border-radius: $message-border-radius;
+				background-color: $user-message-bg-color;
+				margin-bottom: 3px;
+				color: #fff;
+				padding: 10px;
+				span {
+					display: block;
+				}
+				.message-date {
+					color: #ffffff6f;
+					text-align: right;
+					font-size: small;
+					line-height: 0.4;
+				}
+			}
+			div:first-of-type {
+				border-top-right-radius: 0;
+			}
+		}
+	}
+
+	.input-message-box {
+		display: flex;
+		gap: 3;
+		justify-content: center;
+		align-items: center;
+		margin: 2px;
+		$bottom-height: 100px;
+		height: $bottom-height;
+
+		.message-input {
+			background-color: hsl(202.86deg 25.3% 16.27%);
+			border-radius: 15px;
+			padding: 10px;
+			width: 90vw;
+			display: flex;
+			input {
+				width: 100%;
+				background-color: hsl(202.86deg 25.3% 16.27%);
+				border: none;
+			}
+		}
+
+		button {
+			padding: 4px;
+			margin: 4px;
+			// height: 100%;
+			border-radius: 100%;
+			&:hover {
+				background: #4a4747;
+				border-radius: 100%;
+			}
+			img {
+				color: #fff;
+				width: $icon-height;
+				@if $dark-mod == on {
+					filter: invert(100%);
+				}
+			}
+		}
+		.record-voice {
+			background-color: hsl(167.64deg 97.63% 33.14%);
+			border-radius: 100%;
+			padding: 10px;
+			img {
+				color: #fff;
+				width: $icon-height * 1.1;
+				height: $icon-height * 1.1;
+				@if $dark-mod == on {
+					filter: invert(100%);
+				}
+			}
+		}
+	}
+}
