@@ -11,6 +11,7 @@ function Home() {
       {/* <SinglePage /> */}
       <Header />
       <TopPicks />
+      
       <BookContainerLg heading="For Gift Someone" />
       <BookContainerLg heading="Non-Fiction" />
       <Quotes />
