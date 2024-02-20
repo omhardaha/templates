@@ -6,7 +6,7 @@
 		"tailwindcss": "^3.4.1"
 	},
 	"scripts": {
-		"serve": "parcel src/index2.html",
+		"serve": "parcel ./src/index2.html",
 		"build": "parcel build --no-source-maps src/index.html"
 	}
 }
