@@ -8,17 +8,20 @@ const initialState = {
   ]
 }
 
-const counterSlice = createSlice({
+const bookSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
     addBook(state, action) {
       const newBook = { id: nanoid(), title: action.payload.title, desc: action.payload.desc };
       state.books.push(newBook);
+    },
+    remove(state, action) {
+      state.books = state.books.filter((book) => book.id !== action.payload.id)
     }
-    
+
   },
 })
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
-export default counterSlice.reducer
+export const { addBook, remove } = bookSlice.actions
+export default bookSlice.reducer
