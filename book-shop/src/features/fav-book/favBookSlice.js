@@ -8,7 +8,7 @@ const initialState = {
   ]
 }
 
-const bookSlice = createSlice({
+const favBookSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
@@ -16,12 +16,12 @@ const bookSlice = createSlice({
       const newBook = { id: nanoid(), title: action.payload.title, desc: action.payload.desc };
       state.books.push(newBook);
     },
-    remove(state, action) {
+    removeBook(state, action) {
       state.books = state.books.filter((book) => book.id !== action.payload.id)
     }
 
   },
 })
 
-export const { addBook, remove } = bookSlice.actions
-export default bookSlice.reducer
+export const { addBook, remove } = favBookSlice.actions
+export default favBookSlice.reducer
