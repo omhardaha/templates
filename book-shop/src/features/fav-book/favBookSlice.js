@@ -2,9 +2,9 @@ import { createSlice, nanoid } from '@reduxjs/toolkit'
 
 const initialState = {
   books: [
-    { id: 1234, title: "book1", desc: "This is first book" },
-    { id: 1235, title: "book2", desc: "This is secon book" },
-    { id: 1237, title: "book3", desc: "This is third book" }
+    { id: 1234, title: "book1", desc: "This is first book" ,link:"http://books.google.com/books/content?id=0r-ztgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"},
+    { id: 1235, title: "book2", desc: "This is secon book" ,link:"http://books.google.com/books/content?id=0r-ztgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"},
+    { id: 1237, title: "book3", desc: "This is third book" ,link:"http://books.google.com/books/content?id=0r-ztgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"}
   ]
 }
 
