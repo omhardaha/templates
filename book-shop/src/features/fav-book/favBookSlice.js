@@ -17,7 +17,7 @@ const favBookSlice = createSlice({
       state.books.push(newBook);
     },
     removeBook(state, action) {
-      state.books = state.books.filter((book) => book.id !== action.payload.id)
+      state.books = state.books.filter(book => book.id !== action.payload.id)
     }
 
   },
